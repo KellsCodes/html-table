@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>html table</title>
+  </head>
+  <style>
+    .content-table {
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+    .content-table thead tr {
+        background-color: #009879;
+        color: #fefefe;
+        text-align: left;
+        font-weight: bold;
+        border-left: 1px solid #009879;
+        border-right: 1px solid #009879;
+    }
+
+    .content-table th, .content-table td {
+        padding: 12px 15px;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+  </style>
+  <body>
+    <div class="mx-auto p-2 border rounded w-2/3 m-2">
+      <header class="w-full">
+        <h1 class="text-xl p-2 text-[blue] text-center">Simple html table</h1>
+      </header>
+
+      <div class="w-full flex items-center justify-center">
+        <table class="content-table border-collapse my-[25px] mx-[0px] text-sm w-auto">
+          <thead>
+            <tr>
+              <th>S/N</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Joshua Izu</td>
+              <td>joshuaizu@gmail.com</td>
+              <td>Owerri</td>
+              <td>Imo</td>
+              <td>Nigeria</td>
+              <td class="current_date">26/08/2022</td>
+            </tr>
+              <td>2</td>
+              <td>Joshua Izu</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td class="current_date">26/08/2022</td>
+            </tr>
+              <td>3</td>
+              <td>Wisdom Diala</td>
+              <td>wisdomdiala@gmail.com</td>
+              <td>Owerri</td>
+              <td>Imo</td>
+              <td>Nigeria</td>
+              <td class="current_date">26/08/2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+    //   document.querySelector("current_date").innerHTML = new Date();
+    </script>
+  </body>
+</html>
